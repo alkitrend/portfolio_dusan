@@ -107,8 +107,8 @@ export default function ProjectSection() {
 
               <div className="p-8 lg:p-12 flex items-center">
                 <img
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                  alt="Task management platform interface"
+                  src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                  alt="Task management platform interface with dashboard analytics"
                   className="rounded-2xl shadow-xl w-full h-auto transform hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -211,8 +211,8 @@ export default function ProjectSection() {
 
               <div className="p-8 lg:p-12 flex items-center">
                 <img
-                  src="https://images.unsplash.com/photo-1593941707882-a5bac6861d75?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                  alt="Electric vehicle charging station interface"
+                  src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                  alt="Modern electric vehicle charging station with mobile app interface"
                   className="rounded-2xl shadow-xl w-full h-auto transform hover:scale-105 transition-transform duration-300"
                 />
               </div>
