@@ -35,7 +35,7 @@ export default function AboutSection() {
           
           <div className="relative animate-slide-up">
             <img
-              src="/attached_assets/IMG_5040.JPG"
+              src="/dusan-photo.jpg"
               alt="Dusan Radosavljevic - Professional developer portrait"
               className="rounded-2xl shadow-2xl w-full h-auto"
             />
