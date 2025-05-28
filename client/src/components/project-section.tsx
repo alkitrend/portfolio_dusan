@@ -98,10 +98,6 @@ export default function ProjectSection() {
                     <i className="fas fa-external-link-alt mr-2"></i>
                     Visit Live Site
                   </a>
-                  <button className="border-2 border-primary hover:bg-primary hover:text-white text-primary px-6 py-3 rounded-lg font-semibold transition-all duration-300">
-                    <i className="fab fa-github mr-2"></i>
-                    View Code
-                  </button>
                 </div>
               </div>
 
@@ -202,10 +198,6 @@ export default function ProjectSection() {
                     <i className="fas fa-external-link-alt mr-2"></i>
                     Visit Live Site
                   </a>
-                  <button className="border-2 border-green-600 hover:bg-green-600 hover:text-white text-green-600 px-6 py-3 rounded-lg font-semibold transition-all duration-300">
-                    <i className="fab fa-github mr-2"></i>
-                    View Code
-                  </button>
                 </div>
               </div>
 

@@ -39,7 +39,7 @@ export default function AboutSection() {
               alt="Dusan Radosavljevic - Professional developer portrait"
               className="rounded-2xl shadow-2xl w-full h-auto"
             />
-            <div className="absolute -bottom-6 -right-6 bg-accent text-white p-6 rounded-xl shadow-lg animate-float">
+            <div className="absolute -bottom-6 -right-6 bg-accent text-white p-6 rounded-xl shadow-lg animate-float cursor-pointer">
               <div className="text-center">
                 <div className="text-2xl font-bold">5,000+</div>
                 <div className="text-sm">Users Onboarded</div>

@@ -1,6 +1,11 @@
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
+import fs from "fs";
+import rateLimit from "express-rate-limit";
+import helmet from "helmet";
+import compression from "compression";
+import cors from "cors";
 
 const app = express();
 app.use(express.json());
@@ -36,6 +41,26 @@ app.use((req, res, next) => {
   next();
 });
 
+// Apply rate limiting to all API routes
+app.use("/api", rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // limit each IP to 100 requests per windowMs
+  standardHeaders: true,
+  legacyHeaders: false,
+}));
+
+// Apply security headers
+app.use(helmet());
+
+// Enable gzip compression
+app.use(compression());
+
+// CORS: Allow all in dev, restrict in prod
+app.use(cors({
+  origin: process.env.NODE_ENV === "production" ? ["https://yourdomain.com"] : true,
+  credentials: true,
+}));
+
 (async () => {
   const server = await registerRoutes(app);
 
@@ -44,7 +69,12 @@ app.use((req, res, next) => {
     const message = err.message || "Internal Server Error";
 
     res.status(status).json({ message });
-    throw err;
+    // Log error to console
+    console.error(`[${new Date().toISOString()}]`, err);
+    // In production, also log to a file
+    if (process.env.NODE_ENV === "production") {
+      fs.appendFileSync("server-error.log", `[${new Date().toISOString()}] ${err.stack || err}\n`);
+    }
   });
 
   // importantly only setup vite in development and after
@@ -62,8 +92,7 @@ app.use((req, res, next) => {
   const port = 5000;
   server.listen({
     port,
-    host: "0.0.0.0",
-    reusePort: true,
+    host: "127.0.0.1",
   }, () => {
     log(`serving on port ${port}`);
   });
