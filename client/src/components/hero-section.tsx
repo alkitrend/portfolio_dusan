@@ -46,11 +46,6 @@ export default function HeroSection() {
             </button>
           </div>
           
-          <div className="mt-12 flex justify-center space-x-6">
-            <i className="fab fa-github text-2xl hover:text-accent transition-colors cursor-pointer"></i>
-            <i className="fab fa-linkedin text-2xl hover:text-accent transition-colors cursor-pointer"></i>
-            <i className="fas fa-envelope text-2xl hover:text-accent transition-colors cursor-pointer"></i>
-          </div>
         </div>
       </div>
 
