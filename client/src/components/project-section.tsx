@@ -103,7 +103,7 @@ export default function ProjectSection() {
 
               <div className="p-8 lg:p-12 flex items-center">
                 <img
-                  src="/uradi.png"
+                  src=""
                   alt="Professional business analytics dashboard showing task management metrics"
                   className="rounded-2xl shadow-xl w-full h-auto transform hover:scale-105 transition-transform duration-300"
                 />
@@ -203,7 +203,7 @@ export default function ProjectSection() {
 
               <div className="p-8 lg:p-12 flex items-center">
                 <img
-                  src="/chargego.png"
+                  src=""
                   alt="Modern EV charging infrastructure with smart technology integration"
                   className="rounded-2xl shadow-xl w-full h-auto transform hover:scale-105 transition-transform duration-300"
                 />
