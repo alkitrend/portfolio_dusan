@@ -54,9 +54,9 @@ export default function SkillsSection() {
       iconColor: "bg-blue-100",
       skills: [
         { name: "React.js", rating: 5 },
-        { name: "Next.js", rating: 4 },
+        { name: "Next.js", rating: 5 },
         { name: "JavaScript", rating: 5 },
-        { name: "TypeScript", rating: 4 },
+        { name: "TypeScript", rating: 5 },
         { name: "Tailwind CSS", rating: 5 },
       ],
     },
@@ -67,7 +67,7 @@ export default function SkillsSection() {
       skills: [
         { name: "Laravel", rating: 5 },
         { name: "PHP", rating: 5 },
-        { name: "Node.js", rating: 4 },
+        { name: "Node.js", rating: 5 },
         { name: "RESTful API", rating: 5 },
         { name: "MySQL", rating: 5 },
       ],
